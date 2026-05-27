@@ -8,6 +8,121 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title></title>
     <link href="style.css?v=2" rel="stylesheet" />
+    <style>
+        .admission-faq-section {
+            margin-top: 70px;
+            padding: 44px;
+            background: #f8f8f8;
+            border: 1px solid #e5e5e5;
+        }
+
+        .admission-faq-section #faq {
+            display: block;
+            width: 100%;
+            margin: 0 0 34px !important;
+            padding: 0 0 18px !important;
+            border-left: 0 !important;
+            border-bottom: 2px solid #222 !important;
+            text-align: left !important;
+            font-size: 30px;
+            letter-spacing: 1.5px;
+        }
+
+        .admission-faq-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .admission-faq-section h4 {
+            margin: 34px 0 16px !important;
+            padding: 10px 16px !important;
+            border: 0 !important;
+            border-left: 5px solid #333 !important;
+            background: #fff;
+            color: #222;
+            text-align: left;
+            font-size: 18px !important;
+            letter-spacing: 0.8px;
+        }
+
+        .admission-faq-section h4:first-of-type {
+            margin-top: 0 !important;
+        }
+
+        .admission-faq-section .qa-item {
+            margin-bottom: 0 !important;
+            padding: 22px 26px;
+            background: #fff;
+            border: 1px solid #e1e1e1;
+        }
+
+        .admission-faq-section .qa-item p {
+            margin: 0 !important;
+            letter-spacing: 0.3px;
+        }
+
+        .admission-faq-section .qa-item p:first-child {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #ededed;
+            color: #222 !important;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .admission-faq-section .qa-item p:last-child {
+            position: relative;
+            padding: 14px 0 0 38px !important;
+            color: #555 !important;
+            line-height: 1.85 !important;
+        }
+
+        .admission-faq-section .qa-item p:first-child span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+            width: 30px;
+            height: 30px;
+            margin: 0 !important;
+            background: #333;
+            color: #fff !important;
+            font-size: 13px;
+            line-height: 1;
+        }
+
+        .admission-faq-section .qa-item p:last-child span {
+            position: absolute;
+            top: 16px;
+            left: 0;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 28px;
+            height: 28px;
+            margin: 0 !important;
+            background: #f0f0f0;
+            color: #555 !important;
+            font-size: 13px;
+            line-height: 1;
+        }
+
+        @media (max-width: 700px) {
+            .admission-faq-section {
+                padding: 28px 18px;
+            }
+
+            .admission-faq-section #faq {
+                font-size: 26px;
+            }
+
+            .admission-faq-section .qa-item {
+                padding: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -254,10 +369,10 @@
         </section>
         <hr />
         <!-- Section 5 -->
-        <section class="course-section">
+        <section class="course-section admission-faq-section">
             <h2 class="course-title" id="faq"
                 style="text-align: left; border-left: 5px solid #333; padding-left: 15px;">よくあるご質問</h2>
-            <div class="content-block">
+            <div class="content-block admission-faq-list">
                 <h4 style="border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 20px; font-size: 1.3em;">
                     入試について知りたい</h4>
                 <div class="qa-item" style="margin-bottom: 20px;">
