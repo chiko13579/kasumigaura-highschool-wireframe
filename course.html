@@ -71,10 +71,25 @@
         }
 
         .course-page .course-title {
+            position: relative;
             font-size: 30px;
             line-height: 1.45;
             letter-spacing: 1.5px;
             border-bottom: 2px solid #333;
+            padding: 18px 0 18px 22px;
+            border-left: 8px solid #333;
+            background: #fff;
+        }
+
+        .course-page .course-title::before {
+            content: "COURSE";
+            display: block;
+            margin-bottom: 8px;
+            color: #777;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.6px;
+            line-height: 1;
         }
 
         .course-page .course-section h3 {
