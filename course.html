@@ -6,11 +6,141 @@
     <meta charset="utf-8" />
     <meta content="noindex, nofollow" name="robots" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title></title>
+    <title>3つのコース紹介 | 霞ヶ浦高等学校</title>
     <link href="style.css?v=2" rel="stylesheet" />
+    <style>
+        .course-page {
+            max-width: 1320px;
+        }
+
+        .course-body .quick-nav-container,
+        .course-body .footer-container {
+            box-sizing: border-box;
+        }
+
+        .course-page-hero-title {
+            position: absolute;
+            bottom: 24px;
+            left: 28px;
+            font-size: 34px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .course-page .course-section {
+            padding: 46px;
+            margin-bottom: 44px;
+            background: #fafafa;
+            border: 1px solid #e3e3e3;
+        }
+
+        .course-page .course-section > .content-block:first-child {
+            padding-bottom: 28px;
+            margin-bottom: 34px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .course-page .course-title {
+            font-size: 30px;
+            line-height: 1.45;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #333;
+        }
+
+        .course-page .course-section h3 {
+            margin-top: 34px;
+            padding: 10px 0 10px 16px;
+            border-bottom: 0;
+            border-left: 5px solid #333;
+            background: #fff;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+
+        .course-page .feature-list {
+            display: grid;
+            gap: 10px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .course-page .feature-list li {
+            position: relative;
+            margin-bottom: 0;
+            padding: 14px 16px 14px 34px;
+            background: #fff;
+            border: 1px solid #e4e4e4;
+            line-height: 1.8;
+        }
+
+        .course-page .feature-list li::before {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: 16px;
+            width: 7px;
+            height: 7px;
+            background: #333;
+        }
+
+        .course-page .sub-section {
+            margin-top: 36px;
+            padding: 28px;
+            background: #fff;
+            border: 1px solid #e4e4e4;
+        }
+
+        .course-page .achievement-box {
+            background: #fff;
+            border: 1px solid #e4e4e4;
+        }
+
+        .course-page .image-placeholder {
+            background-color: #e7e7e7;
+            border-color: #bdbdbd;
+        }
+
+        .course-page hr {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            .course-page .course-section {
+                padding: 28px 18px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .course-page {
+                width: calc(100% - 32px);
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .course-body .quick-nav-container,
+            .course-body .footer-container {
+                width: 100%;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .course-page .space-item {
+                min-width: 0;
+                width: 100%;
+            }
+
+            .course-page-hero-title {
+                left: 18px;
+                bottom: 18px;
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="course-body">
     <header>
         <div class="modern-header-container">
             <div class="logo-container">
@@ -156,11 +286,9 @@
             });
         </script>
     </header>
-    <main class="container">
+    <main class="container course-page">
         <div style="width: 100%; height: 400px; background-color: #ccc; position: relative; margin-bottom: 40px;">
-            <h1
-                style="position: absolute; bottom: 20px; left: 20px; font-size: 32px; font-weight: bold; color: #333; margin: 0; letter-spacing: 2px;">
-                3つのコース紹介</h1>
+            <h1 class="course-page-hero-title">3つのコース紹介</h1>
         </div>
         <section class="course-section" id="special-advanced">
             <div class="content-block">
