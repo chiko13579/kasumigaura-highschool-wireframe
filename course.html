@@ -62,6 +62,7 @@
             margin-bottom: 44px;
             background: #fafafa;
             border: 1px solid #e3e3e3;
+            overflow: hidden;
         }
 
         .course-page .course-section > .content-block:first-child {
@@ -73,17 +74,18 @@
         .course-page .course-title {
             position: relative;
             display: block;
-            width: 100%;
+            width: calc(100% + 92px);
             box-sizing: border-box;
             font-size: 36px;
             line-height: 1.45;
             letter-spacing: 1.5px;
             border-bottom: 0;
-            padding: 28px 32px;
+            padding: 28px 46px;
+            margin: -46px -46px 24px !important;
             border-left: 0;
             background: #222;
             color: #fff;
-            box-shadow: 10px 10px 0 #e6e6e6;
+            box-shadow: none;
         }
 
         .course-page .course-section h3 {
@@ -129,45 +131,6 @@
             border: 1px solid #e4e4e4;
         }
 
-        .course-key-message {
-            display: grid;
-            grid-template-columns: minmax(280px, 0.36fr) minmax(0, 1fr);
-            gap: 0;
-            align-items: stretch;
-            padding: 0;
-            background: #fff;
-            border: 1px solid #dedede;
-        }
-
-        .course-key-message h3 {
-            margin: 0 !important;
-            min-height: 100%;
-            padding: 34px 30px !important;
-            display: flex;
-            align-items: center;
-            border: 0 !important;
-            background: #333 !important;
-            color: #fff;
-            font-size: 25px;
-            line-height: 1.7;
-        }
-
-        .course-key-message h3 {
-            position: relative;
-        }
-
-        .course-key-message-body {
-            padding: 30px 34px;
-        }
-
-        .course-key-message-body p:first-child {
-            margin-top: 0;
-        }
-
-        .course-key-message-body p:last-child {
-            margin-bottom: 0;
-        }
-
         .course-page .achievement-box {
             background: #fff;
             border: 1px solid #e4e4e4;
@@ -191,9 +154,10 @@
                 padding: 28px 18px;
             }
 
-            .course-key-message {
-                grid-template-columns: 1fr;
-                padding: 22px;
+            .course-page .course-title {
+                width: calc(100% + 36px);
+                margin: -28px -18px 24px !important;
+                padding: 24px 22px;
             }
         }
 
@@ -224,8 +188,6 @@
 
             .course-page .course-title {
                 font-size: 27px;
-                padding: 24px 22px;
-                box-shadow: 6px 6px 0 #e6e6e6;
             }
         }
     </style>
@@ -388,10 +350,10 @@
         </nav>
         <section class="course-section" id="special-advanced">
             <div class="content-block">
+                <h2 class="course-title" id="tokushin_senbatsu" style="margin-top: 0;">
+                    特進選抜コース　<br>―難関大学合格へ、本気の3年間。―</h2>
                 <div class="two-column" style="align-items: center;">
                     <div class="column">
-                        <h2 class="course-title" id="tokushin_senbatsu" style="margin-top: 0;">
-                            特進選抜コース　<br>―難関大学合格へ、本気の3年間。―</h2>
                         <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">目標：国公立大学・難関私立大学</p>
                     </div>
                     <div class="column">
@@ -415,13 +377,11 @@
                     </div>
                 </div>
             </div>
-            <div class="content-block course-key-message">
+            <div class="content-block">
                 <h3>「自考自動」</h3>
-                <div class="course-key-message-body">
-                    <p>「自考自動」とは、特進選抜コースの生徒へ向けて作ったオリジナルの四字熟語です。この言葉を胸に先輩たちは日々の学校生活を送っています。将来、他者をけん引する存在になれるように、様々なことを学び体験します。皆さんが霞ヶ浦高等学校に来ると会える「スクールサポーター」（社会人や大学生などの外部サポーター）もその1つです。そして高校生活の中心である学習を通して、「一生学び続けるための『学び方』を身つけ、今の自分をさらに磨いてみませんか？
-                    </p>
-                    <p>進路活動も充実しており、多くの先輩・友人・教員が様々なことを語り、皆さんをサポートしてくれます。霞ヶ浦高等学校の特進選抜コースで一緒に学び、今の自分をさらに磨いてみませんか？</p>
-                </div>
+                <p>「自考自動」とは、特進選抜コースの生徒へ向けて作ったオリジナルの四字熟語です。この言葉を胸に先輩たちは日々の学校生活を送っています。将来、他者をけん引する存在になれるように、様々なことを学び体験します。皆さんが霞ヶ浦高等学校に来ると会える「スクールサポーター」（社会人や大学生などの外部サポーター）もその1つです。そして高校生活の中心である学習を通して、「一生学び続けるための『学び方』を身つけ、今の自分をさらに磨いてみませんか？
+                </p>
+                <p>進路活動も充実しており、多くの先輩・友人・教員が様々なことを語り、皆さんをサポートしてくれます。霞ヶ浦高等学校の特進選抜コースで一緒に学び、今の自分をさらに磨いてみませんか？</p>
             </div>
             <div class="sub-section">
                 <h3>「学習センターでの学び」</h3>
@@ -470,9 +430,9 @@
         <hr />
         <section class="course-section" id="advanced">
             <div class="content-block">
+                <h2 class="course-title" id="tokushin" style="margin-top: 0;">特進コース　<br>―部活も進学も、本気で挑む3年間。―</h2>
                 <div class="two-column" style="align-items: center;">
                     <div class="column">
-                        <h2 class="course-title" id="tokushin" style="margin-top: 0;">特進コース　<br>―部活も進学も、本気で挑む3年間。―</h2>
                         <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">目標：中堅私立大学・国公立大学（推薦）</p>
                     </div>
                     <div class="column">
@@ -496,14 +456,12 @@
                     </div>
                 </div>
             </div>
-            <div class="content-block course-key-message">
+            <div class="content-block">
                 <h3>「文武両道」―学びも挑戦も全力で行う姿勢を身につけるー</h3>
-                <div class="course-key-message-body">
-                    <p>この言葉を胸に先輩たちは学業にも部活動にも全力で取り組んでいます。「メリハリのある高校生活を送りたい！」「部活に本気で取り組みながら大学進学をしたい！」そんな本気の思いを応援します。総合型選抜や学校推薦型選抜に特化した活動を通して、得意な部活動も活かして大学進学を目指します。もちろん部活動に所属していない人も、自分の得意を見つけて・伸ばして・活かして大学進学を目指せます。「キャリア探究」の授業や２年次の「ゼミ」活動で「自分のこと」「社会のこと」を深く考え、そこに向けた行動をすることで、自分だけの強みを武器に、受験へ臨みましょう。
-                    </p>
-                    <p>多様な入試方式（小論文・面接・集団討論・プレゼンテーション）に対応した活動を通して、自分の人生を明確に設計し、大学への強い志望理由を手に入れていきましょう。また、理系選択者には一般選抜まで見据えた指導を行い、学力の充実も図っていきます。
-                    </p>
-                </div>
+                <p>この言葉を胸に先輩たちは学業にも部活動にも全力で取り組んでいます。「メリハリのある高校生活を送りたい！」「部活に本気で取り組みながら大学進学をしたい！」そんな本気の思いを応援します。総合型選抜や学校推薦型選抜に特化した活動を通して、得意な部活動も活かして大学進学を目指します。もちろん部活動に所属していない人も、自分の得意を見つけて・伸ばして・活かして大学進学を目指せます。「キャリア探究」の授業や２年次の「ゼミ」活動で「自分のこと」「社会のこと」を深く考え、そこに向けた行動をすることで、自分だけの強みを武器に、受験へ臨みましょう。
+                </p>
+                <p>多様な入試方式（小論文・面接・集団討論・プレゼンテーション）に対応した活動を通して、自分の人生を明確に設計し、大学への強い志望理由を手に入れていきましょう。また、理系選択者には一般選抜まで見据えた指導を行い、学力の充実も図っていきます。
+                </p>
             </div>
             <div class="sub-section">
                 <h3>「探究学習」</h3>
@@ -531,10 +489,10 @@
         <hr />
         <section class="course-section" id="comprehensive">
             <div class="content-block">
+                <h2 class="course-title" id="sogo" style="margin-top: 0;">総合進学コース　<br>―大学・専門・就職へ、多様な進路をサポート―
+                </h2>
                 <div class="two-column" style="align-items: center;">
                     <div class="column">
-                        <h2 class="course-title" id="sogo" style="margin-top: 0;">総合進学コース　<br>―大学・専門・就職へ、多様な進路をサポート―
-                        </h2>
                         <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">
                             目標：私立文系大学・短期大学・専門職大学・専門学校・就職（公務員含む）</p>
                     </div>
@@ -574,15 +532,13 @@
                     </div>
                 </div>
             </div>
-            <div class="content-block course-key-message">
+            <div class="content-block">
                 <h3>「力戦奮闘」―視野を広げ、自分の道にまっすぐ進む姿勢を身につける―
                 </h3>
-                <div class="course-key-message-body">
-                    <p>総合進学コースの生徒へ向けたオリジナルの四字熟語です。この言葉を胸に先輩たちは日々自分自身にできることを精一杯努力しています。様々な進路目標をもつ友人や先輩と交流することで視野を広げ、1年次から行う進路活動によって、自分の希望進路を決めていきます。どの進路にも対応できるように「基礎学力の定着」「学習習慣の確立」を目指し、ときには学び直しをしながら力を向上させていきます。
-                    </p>
-                    <p>１年次から継続的に行う外部講師による公務員講座や看護医療系対策講座の実施、３年次には年内入試対策に特化した「キャリア探究」の授業を通して、幅広く進路実現に向けたサポート体制が整っています。<br />霞ヶ浦高等学校の総合進学コースで、希望進路を見つけて新たなステージへ進んでみませんか？
-                    </p>
-                </div>
+                <p>総合進学コースの生徒へ向けたオリジナルの四字熟語です。この言葉を胸に先輩たちは日々自分自身にできることを精一杯努力しています。様々な進路目標をもつ友人や先輩と交流することで視野を広げ、1年次から行う進路活動によって、自分の希望進路を決めていきます。どの進路にも対応できるように「基礎学力の定着」「学習習慣の確立」を目指し、ときには学び直しをしながら力を向上させていきます。
+                </p>
+                <p>１年次から継続的に行う外部講師による公務員講座や看護医療系対策講座の実施、３年次には年内入試対策に特化した「キャリア探究」の授業を通して、幅広く進路実現に向けたサポート体制が整っています。<br />霞ヶ浦高等学校の総合進学コースで、希望進路を見つけて新たなステージへ進んでみませんか？
+                </p>
             </div>
             <div class="sub-section">
                 <h3>「進路にあった特別講座」</h3>
