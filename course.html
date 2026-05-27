@@ -72,24 +72,18 @@
 
         .course-page .course-title {
             position: relative;
-            font-size: 30px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 36px;
             line-height: 1.45;
             letter-spacing: 1.5px;
-            border-bottom: 2px solid #333;
-            padding: 18px 0 18px 22px;
-            border-left: 8px solid #333;
-            background: #fff;
-        }
-
-        .course-page .course-title::before {
-            content: "COURSE";
-            display: block;
-            margin-bottom: 8px;
-            color: #777;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 1.6px;
-            line-height: 1;
+            border-bottom: 0;
+            padding: 28px 32px;
+            border-left: 0;
+            background: #222;
+            color: #fff;
+            box-shadow: 10px 10px 0 #e6e6e6;
         }
 
         .course-page .course-section h3 {
@@ -137,10 +131,10 @@
 
         .course-key-message {
             display: grid;
-            grid-template-columns: minmax(240px, 0.34fr) minmax(0, 1fr);
-            gap: 28px;
-            align-items: start;
-            padding: 30px;
+            grid-template-columns: minmax(280px, 0.36fr) minmax(0, 1fr);
+            gap: 0;
+            align-items: stretch;
+            padding: 0;
             background: #fff;
             border: 1px solid #dedede;
         }
@@ -148,6 +142,22 @@
         .course-key-message h3 {
             margin: 0 !important;
             min-height: 100%;
+            padding: 34px 30px !important;
+            display: flex;
+            align-items: center;
+            border: 0 !important;
+            background: #333 !important;
+            color: #fff;
+            font-size: 25px;
+            line-height: 1.7;
+        }
+
+        .course-key-message h3 {
+            position: relative;
+        }
+
+        .course-key-message-body {
+            padding: 30px 34px;
         }
 
         .course-key-message-body p:first-child {
@@ -210,6 +220,12 @@
                 left: 18px;
                 bottom: 18px;
                 font-size: 28px;
+            }
+
+            .course-page .course-title {
+                font-size: 27px;
+                padding: 24px 22px;
+                box-shadow: 6px 6px 0 #e6e6e6;
             }
         }
     </style>
@@ -399,11 +415,13 @@
                     </div>
                 </div>
             </div>
-            <div class="content-block">
+            <div class="content-block course-key-message">
                 <h3>「自考自動」</h3>
-                <p>「自考自動」とは、特進選抜コースの生徒へ向けて作ったオリジナルの四字熟語です。この言葉を胸に先輩たちは日々の学校生活を送っています。将来、他者をけん引する存在になれるように、様々なことを学び体験します。皆さんが霞ヶ浦高等学校に来ると会える「スクールサポーター」（社会人や大学生などの外部サポーター）もその1つです。そして高校生活の中心である学習を通して、「一生学び続けるための『学び方』を身つけ、今の自分をさらに磨いてみませんか？
-                </p>
-                <p>進路活動も充実しており、多くの先輩・友人・教員が様々なことを語り、皆さんをサポートしてくれます。霞ヶ浦高等学校の特進選抜コースで一緒に学び、今の自分をさらに磨いてみませんか？</p>
+                <div class="course-key-message-body">
+                    <p>「自考自動」とは、特進選抜コースの生徒へ向けて作ったオリジナルの四字熟語です。この言葉を胸に先輩たちは日々の学校生活を送っています。将来、他者をけん引する存在になれるように、様々なことを学び体験します。皆さんが霞ヶ浦高等学校に来ると会える「スクールサポーター」（社会人や大学生などの外部サポーター）もその1つです。そして高校生活の中心である学習を通して、「一生学び続けるための『学び方』を身つけ、今の自分をさらに磨いてみませんか？
+                    </p>
+                    <p>進路活動も充実しており、多くの先輩・友人・教員が様々なことを語り、皆さんをサポートしてくれます。霞ヶ浦高等学校の特進選抜コースで一緒に学び、今の自分をさらに磨いてみませんか？</p>
+                </div>
             </div>
             <div class="sub-section">
                 <h3>「学習センターでの学び」</h3>
@@ -478,12 +496,14 @@
                     </div>
                 </div>
             </div>
-            <div class="content-block">
+            <div class="content-block course-key-message">
                 <h3>「文武両道」―学びも挑戦も全力で行う姿勢を身につけるー</h3>
-                <p>この言葉を胸に先輩たちは学業にも部活動にも全力で取り組んでいます。「メリハリのある高校生活を送りたい！」「部活に本気で取り組みながら大学進学をしたい！」そんな本気の思いを応援します。総合型選抜や学校推薦型選抜に特化した活動を通して、得意な部活動も活かして大学進学を目指します。もちろん部活動に所属していない人も、自分の得意を見つけて・伸ばして・活かして大学進学を目指せます。「キャリア探究」の授業や２年次の「ゼミ」活動で「自分のこと」「社会のこと」を深く考え、そこに向けた行動をすることで、自分だけの強みを武器に、受験へ臨みましょう。
-                </p>
-                <p>多様な入試方式（小論文・面接・集団討論・プレゼンテーション）に対応した活動を通して、自分の人生を明確に設計し、大学への強い志望理由を手に入れていきましょう。また、理系選択者には一般選抜まで見据えた指導を行い、学力の充実も図っていきます。
-                </p>
+                <div class="course-key-message-body">
+                    <p>この言葉を胸に先輩たちは学業にも部活動にも全力で取り組んでいます。「メリハリのある高校生活を送りたい！」「部活に本気で取り組みながら大学進学をしたい！」そんな本気の思いを応援します。総合型選抜や学校推薦型選抜に特化した活動を通して、得意な部活動も活かして大学進学を目指します。もちろん部活動に所属していない人も、自分の得意を見つけて・伸ばして・活かして大学進学を目指せます。「キャリア探究」の授業や２年次の「ゼミ」活動で「自分のこと」「社会のこと」を深く考え、そこに向けた行動をすることで、自分だけの強みを武器に、受験へ臨みましょう。
+                    </p>
+                    <p>多様な入試方式（小論文・面接・集団討論・プレゼンテーション）に対応した活動を通して、自分の人生を明確に設計し、大学への強い志望理由を手に入れていきましょう。また、理系選択者には一般選抜まで見据えた指導を行い、学力の充実も図っていきます。
+                    </p>
+                </div>
             </div>
             <div class="sub-section">
                 <h3>「探究学習」</h3>
