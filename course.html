@@ -29,6 +29,34 @@
             letter-spacing: 2px;
         }
 
+        .course-anchor-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin: 0 0 34px;
+        }
+
+        .course-anchor-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 58px;
+            padding: 14px 18px;
+            background: #333;
+            border: 1px solid #333;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+
+        .course-anchor-buttons a:hover {
+            background: #fff;
+            color: #333;
+        }
+
         .course-page .course-section {
             padding: 46px;
             margin-bottom: 44px;
@@ -92,6 +120,29 @@
             border: 1px solid #e4e4e4;
         }
 
+        .course-key-message {
+            display: grid;
+            grid-template-columns: minmax(240px, 0.34fr) minmax(0, 1fr);
+            gap: 28px;
+            align-items: start;
+            padding: 30px;
+            background: #fff;
+            border: 1px solid #dedede;
+        }
+
+        .course-key-message h3 {
+            margin: 0 !important;
+            min-height: 100%;
+        }
+
+        .course-key-message-body p:first-child {
+            margin-top: 0;
+        }
+
+        .course-key-message-body p:last-child {
+            margin-bottom: 0;
+        }
+
         .course-page .achievement-box {
             background: #fff;
             border: 1px solid #e4e4e4;
@@ -107,8 +158,17 @@
         }
 
         @media (max-width: 900px) {
+            .course-anchor-buttons {
+                grid-template-columns: 1fr;
+            }
+
             .course-page .course-section {
                 padding: 28px 18px;
+            }
+
+            .course-key-message {
+                grid-template-columns: 1fr;
+                padding: 22px;
             }
         }
 
@@ -290,6 +350,11 @@
         <div style="width: 100%; height: 400px; background-color: #ccc; position: relative; margin-bottom: 40px;">
             <h1 class="course-page-hero-title">3つのコース紹介</h1>
         </div>
+        <nav class="course-anchor-buttons" aria-label="コース内メニュー">
+            <a href="#tokushin_senbatsu">特進選抜コース</a>
+            <a href="#tokushin">特進コース</a>
+            <a href="#sogo">総合進学コース</a>
+        </nav>
         <section class="course-section" id="special-advanced">
             <div class="content-block">
                 <div class="two-column" style="align-items: center;">
@@ -474,13 +539,15 @@
                     </div>
                 </div>
             </div>
-            <div class="content-block">
+            <div class="content-block course-key-message">
                 <h3>「力戦奮闘」―視野を広げ、自分の道にまっすぐ進む姿勢を身につける―
                 </h3>
-                <p>総合進学コースの生徒へ向けたオリジナルの四字熟語です。この言葉を胸に先輩たちは日々自分自身にできることを精一杯努力しています。様々な進路目標をもつ友人や先輩と交流することで視野を広げ、1年次から行う進路活動によって、自分の希望進路を決めていきます。どの進路にも対応できるように「基礎学力の定着」「学習習慣の確立」を目指し、ときには学び直しをしながら力を向上させていきます。
-                </p>
-                <p>１年次から継続的に行う外部講師による公務員講座や看護医療系対策講座の実施、３年次には年内入試対策に特化した「キャリア探究」の授業を通して、幅広く進路実現に向けたサポート体制が整っています。<br />霞ヶ浦高等学校の総合進学コースで、希望進路を見つけて新たなステージへ進んでみませんか？
-                </p>
+                <div class="course-key-message-body">
+                    <p>総合進学コースの生徒へ向けたオリジナルの四字熟語です。この言葉を胸に先輩たちは日々自分自身にできることを精一杯努力しています。様々な進路目標をもつ友人や先輩と交流することで視野を広げ、1年次から行う進路活動によって、自分の希望進路を決めていきます。どの進路にも対応できるように「基礎学力の定着」「学習習慣の確立」を目指し、ときには学び直しをしながら力を向上させていきます。
+                    </p>
+                    <p>１年次から継続的に行う外部講師による公務員講座や看護医療系対策講座の実施、３年次には年内入試対策に特化した「キャリア探究」の授業を通して、幅広く進路実現に向けたサポート体制が整っています。<br />霞ヶ浦高等学校の総合進学コースで、希望進路を見つけて新たなステージへ進んでみませんか？
+                    </p>
+                </div>
             </div>
             <div class="sub-section">
                 <h3>「進路にあった特別講座」</h3>
